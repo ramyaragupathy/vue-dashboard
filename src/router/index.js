@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Profile from '@/components/Profile'
-import Report from '@/components/Report'
+import Report from '@/components/report'
 
 Vue.use(Router)
 
