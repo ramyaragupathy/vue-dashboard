@@ -1,5 +1,4 @@
 <template>
-    <div class="column is-3">
         <aside class="menu">
             <p class="menu-label">
                 General
@@ -17,7 +16,6 @@
                 <li><a>Demo</a></li>
             </ul>
         </aside>
-    </div>
 </template>
 <script>
     export default {

@@ -1,6 +1,6 @@
 <template>
   <div>
-  <div id="Profile" class="container">
+  <div id="Profile">
         <div class="box">
 
           <div class="columns">
@@ -40,9 +40,7 @@
                 <i class="fa fa-address-card" aria-hidden="true"></i>
                 <br>
               </span>
-              <span id="Address">{{ address }}</address>
-                </address>
-              </span>
+              <span id="Address">{{ address }}</span>
             </div>
           </div>
 
@@ -150,7 +148,6 @@
       </div>
     </div>
 
-  </div>
   </div>
 </template>
 

@@ -1,8 +1,14 @@
 <template>
-  <div id="app">
-    <left-nav></left-nav>
-    <content-div></content-div>
-  </div>
+    <div class="container">
+      <div class="columns">
+        <div id="leftnav" class="column is-3">
+          <left-nav></left-nav>
+        </div>
+        <div id="content-div" class="column is-9">
+          <content-div></content-div>
+        </div>
+      </div>
+    </div>
 </template>
 
 <script>
@@ -16,14 +22,3 @@ export default {
   name: 'App'
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
