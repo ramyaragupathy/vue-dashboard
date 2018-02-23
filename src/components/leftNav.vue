@@ -6,7 +6,7 @@
             </p>
             <ul class="menu-list">
                 <li><a class="is-active">Dashboard</a></li>
-                <li><a>Edit Personal Info</a></li>
+                <li><router-link v-bind:to="'/profile'">Edit Personal Info</router-link></li>
             </ul>
             <p class="menu-label">
                 Progress
