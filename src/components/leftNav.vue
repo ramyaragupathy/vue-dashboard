@@ -13,7 +13,7 @@
             </p>
             <ul class="menu-list">
                 <li><a>Projects</a></li>
-                <li><a>Daily Report</a></li>
+                <li><router-link v-bind:to="'/report'">Daily Report</router-link></li>
                 <li><a>Demo</a></li>
             </ul>
         </aside>
