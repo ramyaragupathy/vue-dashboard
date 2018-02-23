@@ -1,37 +1,6 @@
 <template>
-  
+  <div>
   <div id="Profile" class="container">
-    <div class="columns">
-      <div class="column is-3">
-        <aside class="menu">
-          <p class="menu-label">
-            General
-          </p>
-          <ul class="menu-list">
-            <li>
-              <a>Dashboard</a>
-            </li>
-            <li>
-              <a class="is-active">Personal Info</a>
-            </li>
-          </ul>
-          <p class="menu-label">
-            Progress
-          </p>
-          <ul class="menu-list">
-            <li>
-              <a>Projects</a>
-            </li>
-            <li>
-              <a>Daily Report</a>
-            </li>
-            <li>
-              <a>Demo</a>
-            </li>
-          </ul>
-        </aside>
-      </div>
-      <div class="column is-9">
         <div class="box">
 
           <div class="columns">
@@ -100,7 +69,7 @@
 
         </div>
 
-      </div>
+      
     </div>
 
     <div id="editor" class="modal">
@@ -181,6 +150,7 @@
       </div>
     </div>
 
+  </div>
   </div>
 </template>
 
