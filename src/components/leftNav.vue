@@ -1,5 +1,4 @@
 <template>
-    <div class="column is-3">
         <aside class="menu">
             <p class="menu-label">
                 General
@@ -14,10 +13,9 @@
             <ul class="menu-list">
                 <li><a>Projects</a></li>
                 <li><router-link v-bind:to="'/report'">Daily Report</router-link></li>
-                <li><a>Demo</a></li>
+                <li><router-link v-bind:to="'/demo'">Demo</router-link></li>
             </ul>
         </aside>
-    </div>
 </template>
 <script>
     export default {
