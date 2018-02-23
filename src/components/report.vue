@@ -32,12 +32,13 @@
 <script>
 import marked from 'marked'
 import _ from 'lodash'
-
+import app-state from '../main.js'
 export default {
   name: 'Report',
   data () {
     return {
-      input: '# hello'
+      input: '# hello',
+      repArr: app-state.dreport.reports
     }
   },
   computed: {
