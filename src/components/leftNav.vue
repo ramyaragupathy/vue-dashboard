@@ -1,0 +1,26 @@
+<template>
+    <div class="column is-3">
+        <aside class="menu">
+            <p class="menu-label">
+                General
+            </p>
+            <ul class="menu-list">
+                <li><a class="is-active">Dashboard</a></li>
+                <li><a>Edit Personal Info</a></li>
+            </ul>
+            <p class="menu-label">
+                Progress
+            </p>
+            <ul class="menu-list">
+                <li><a>Projects</a></li>
+                <li><a>Daily Report</a></li>
+                <li><a>Demo</a></li>
+            </ul>
+        </aside>
+    </div>
+</template>
+<script>
+    export default {
+        name: 'leftNav'
+    }
+</script>
