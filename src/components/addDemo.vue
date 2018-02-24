@@ -79,13 +79,14 @@
     </div>
 </template>
 <script>
+    import appState from '../appData.js'
     export default {
         name: 'addDemo',
         data() {
                 return {
-                title: '',
-                content: '',
-                added: false
+                title: appState.demo.curr.title,
+                content: appState.demo.curr.contents,
+                added: true
             }
         },
         methods: {

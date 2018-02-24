@@ -16,7 +16,7 @@
                 <tbody v-for='demo in pastDemos'>
                   <tr>
                     <td width='5%'><i class='fa fa-bell-o' /></td>
-                    <td><big v-text='demo.title'></big>
+                    <td v-on:click='dispDetails(demo)'><big v-text='demo.title'></big>
                     </td>
                   </tr>
                </tbody>
@@ -25,20 +25,14 @@
          </div>
        </div>
      </div>
-     <div class='column is-7 is-pulled-right'>
+     <div v-if='display' class='column is-7 is-pulled-right'>
        <div class='card'>
          <header class='card-header'>
-           <p class='card-header-title'>
-                  Json Parser
-                </p>
+           <p class='card-header-title' v-text='currSel.title'></p>
          </header>
          <div class='card-content'>
            <div class='content'>
-             <div class='control has-icons-left has-icons-right'>
-                    Completed 2 modules
-                    Code restructuring
-
-                  </div>
+             <div class='control has-icons-left has-icons-right' v-text='currSel.contents'></div>
            </div>
          </div>
         </div>
@@ -58,7 +52,15 @@ export default {
   name: 'Report',
   data () {
     return {
-      pastDemos: appState.demo.past
+      pastDemos: appState.demo.past,
+      display: false,
+      currSel: null
+    }
+  },
+  methods: {
+    dispDetails(demo) {
+      this.display = true
+      this.currSel = demo
     }
   }
 }
