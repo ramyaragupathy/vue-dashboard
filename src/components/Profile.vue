@@ -164,7 +164,6 @@ export default {
         "https://www.linkedin.com/in/mukul-mahajan-singraur-b9386a130/",
         "https://www.facebook.com/in/mukul-mahajan-singraur-b9386a130/",
         "https://www.github.com/in/mukul-mahajan-singraur-b9386a130/",
-        "https://www.facebook.com/in/mukul-mahajan-singraur-b9386a130/",
         "https://www.twitter.com/in/mukul-mahajan-singraur-b9386a130/",
         "https://www.linkein.com/in/mukul-mahajan-singraur-b9386a130/"
       ],
