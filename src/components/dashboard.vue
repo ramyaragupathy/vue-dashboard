@@ -16,20 +16,20 @@
     <div class="tile is-ancestor has-text-centered">
       <div class="tile is-parent">
         <article class="tile is-child box">
-          <p class="title">10</p>
+          <p class="title">{{stats.projects}}</p>
           <p class="subtitle">Projects</p>
         </article>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child box">
-          <p class="title">1</p>
+          <p class="title">{{stats.leaves}}</p>
           <p class="subtitle">Vacation</p>
         </article>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child box">
-          <p class="title">19</p>
-          <p class="subtitle">Days</p>
+          <p class="title">{{stats.since}}</p>
+          <p class="subtitle">Days in geekskool</p>
         </article>
       </div>
     </div>
@@ -136,11 +136,15 @@
 </template>
 
 <script>
+import appState from '../appData.js'
 export default {
   name: 'Dashboard',
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      stats: appState.dashboard.stats,
+      activity: appState.dashboard.activity,
+      dailyreport: appState.dashboard.dailyreport,
+      upcoming: appState.dashboard.upcoming
     }
   }
 }
