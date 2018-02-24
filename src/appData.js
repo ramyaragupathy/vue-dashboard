@@ -6,7 +6,8 @@ export default {
         leaves: 4,
         since: 40
       },
-      activity: [],
+      activity: ["deleted Json Parser", "bshankar launches new crypto scam",
+    "rammukul created new Repository"],
       dailyreport: "nothing to show",
       upcoming:"Launch nuclear missles"
     },
