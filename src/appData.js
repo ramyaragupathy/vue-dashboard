@@ -19,7 +19,15 @@ export default {
       {date: "27/2/18", time : "8:00 AM", content:"- worked on code editor for the app\n - fixed some css for code mirror\n - progress bar for cremains https://github.com/sumitkumar15/kyurious "}
     ]
   },
-  demo: {},
+  demo: {
+    curr: {title: 'GeekChat', contents: 'WebRTC video chat app with socket.io and passport auth'},
+    past: [
+      {title: 'GeekChat', contents: 'WebRTC video chat app with socket.io and passport auth'},
+      {title: 'GeekChat', contents: 'WebRTC video chat app with socket.io and passport auth'},
+      {title: 'GeekChat', contents: 'WebRTC video chat app with socket.io and passport auth'},
+      {title: 'GeekChat', contents: 'WebRTC video chat app with socket.io and passport auth'}
+    ]
+  },
   info: {},
   project: {}
 }
