@@ -26,19 +26,26 @@
       </a>
     </p>
   </div>
+  <div v-for="report in repArr">
+    <report-card :reportData="report"></report-card>
+  </div>
 </div>
 </template>
 
 <script>
 import marked from 'marked'
 import _ from 'lodash'
-import app-state from '../main.js'
+import appState from '../appData.js'
+import reportCard from './reportCard'
+import Vue from 'vue'
+
+Vue.component('report-card', reportCard)
 export default {
   name: 'Report',
-  data () {
+  data() {
     return {
       input: '# hello',
-      repArr: app-state.dreport.reports
+      repArr: appState.dreport.reports
     }
   },
   computed: {
