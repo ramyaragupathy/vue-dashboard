@@ -14,11 +14,11 @@
               </p>
             </div>
             <div class="column is-1">
-              <span id="edit" class="button is-medium is-info is-pulled-right">
+              <a id="edit" class="button is-medium is-info is-pulled-right" href="#/editinfo" >
                 <span class="icon">
                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                 </span>
-              </span>
+              </a>
             </div>
           </div>
 

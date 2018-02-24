@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Profile from '@/components/Profile'
 import Report from '@/components/report'
 import Demo from '@/components/demo'
+import EditInfo from '@/components/EditInfo'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/demo',
       name: 'demo',
       component: Demo
+    },
+    {
+      path: '/EditInfo',
+      name: 'EditInfo',
+      component: EditInfo
     }
   ]
 })
