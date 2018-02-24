@@ -4,8 +4,8 @@
                 General
             </p>
             <ul class="menu-list">
-                <li><a class="is-active">Dashboard</a></li>
-                <li><router-link v-bind:to="'/profile'">Edit Personal Info</router-link></li>
+                <li><a>Dashboard</a></li>
+                <li><router-link v-bind:to="'/profile'">Profile</router-link></li>
             </ul>
             <p class="menu-label">
                 Progress
