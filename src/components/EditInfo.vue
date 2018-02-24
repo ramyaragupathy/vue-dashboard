@@ -1,7 +1,7 @@
 <template>
   <div id="EditInfo">
     <div class="box">
-      
+
       <div id="editor">
             <p class="modal-card-title">Edit your information</p>
 
@@ -66,8 +66,8 @@
               </div>
             </div>
 
-            <button id="save" class="button is-success">Save changes</button>
-            <button id="cancel" class="button">Cancel</button>
+            <button id="save" class="button is-success"><router-link v-bind:to="'/profile'">Save changes</router-link></button>
+            <button id="cancel" class="button"><router-link v-bind:to="'/profile'">Cancel</router-link></button>
         </div>
       </div>
     </div>
