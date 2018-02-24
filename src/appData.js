@@ -22,10 +22,10 @@ export default {
   demo: {
     curr: {title: 'GeekChat', contents: 'WebRTC video chat app with socket.io and passport auth'},
     past: [
-      {title: 'GeekChat', contents: 'WebRTC video chat app with socket.io and passport auth'},
-      {title: 'GeekChat', contents: 'WebRTC video chat app with socket.io and passport auth'},
-      {title: 'GeekChat', contents: 'WebRTC video chat app with socket.io and passport auth'},
-      {title: 'GeekChat', contents: 'WebRTC video chat app with socket.io and passport auth'}
+      {title: 'ABC', contents: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+      {title: 'DEF', contents: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+      {title: 'GHI', contents: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+      {title: 'JKL', contents: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}
     ]
   },
   info: {},
