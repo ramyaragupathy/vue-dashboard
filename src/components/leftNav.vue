@@ -4,7 +4,7 @@
                 General
             </p>
             <ul class="menu-list">
-                <li><a>Dashboard</a></li>
+                <li><router-link v-bind:to="'/'">Dashboard</router-link></li>
                 <li><router-link v-bind:to="'/profile'">Profile</router-link></li>
             </ul>
             <p class="menu-label">
