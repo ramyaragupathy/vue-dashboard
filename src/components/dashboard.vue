@@ -45,52 +45,8 @@
         <div class="card-table">
           <div class="content">
             <table class="table is-fullwidth is-striped">
-              <tbody>
-                <tr>
-                  <td width="5%"><i class="fa fa-bell-o"></i></td>
-                  <td>Created an issue in JSON parser</td>
-                  <!-- <td><a class="button is-small is-primary" href="#">Action</a></td> -->
-                </tr>
-                <tr>
-                  <td width="5%"><i class="fa fa-bell-o"></i></td>
-                  <td>Commited into lisp-interpreter</td>
-                  <!-- <td><a class="button is-small is-primary" href="#">Action</a></td> -->
-                </tr>
-                <tr>
-                  <td width="5%"><i class="fa fa-bell-o"></i></td>
-                  <td>Created a JSON parser</td>
-                  <!-- <td><a class="button is-small is-primary" href="#">Action</a></td> -->
-                </tr>
-                <tr>
-                  <td width="5%"><i class="fa fa-bell-o"></i></td>
-                  <td>Created a JSON parser</td>
-                  <!-- <td><a class="button is-small is-primary" href="#">Action</a></td> -->
-                </tr>
-                <tr>
-                  <td width="5%"><i class="fa fa-bell-o"></i></td>
-                  <td>Created a JSON parser</td>
-                  <!-- <td><a class="button is-small is-primary" href="#">Action</a></td> -->
-                </tr>
-                <tr>
-                  <td width="5%"><i class="fa fa-bell-o"></i></td>
-                  <td>Created a JSON parser</td>
-                  <!-- <td><a class="button is-small is-primary" href="#">Action</a></td> -->
-                </tr>
-                <tr>
-                  <td width="5%"><i class="fa fa-bell-o"></i></td>
-                  <td>Created a JSON parser</td>
-                  <!-- <td><a class="button is-small is-primary" href="#">Action</a></td> -->
-                </tr>
-                <tr>
-                  <td width="5%"><i class="fa fa-bell-o"></i></td>
-                  <td>Created a JSON parser</td>
-                  <!-- <td><a class="button is-small is-primary" href="#">Action</a></td> -->
-                </tr>
-                <tr>
-                  <td width="5%"><i class="fa fa-bell-o"></i></td>
-                  <td>Created a JSON parser</td>
-                  <!-- <td><a class="button is-small is-primary" href="#">Action</a></td> -->
-                </tr>
+              <tbody v-html="activitylist">
+
               </tbody>
             </table>
           </div>
@@ -110,8 +66,7 @@
         <div class="card-content">
           <div class="content">
             <div class="control has-icons-left has-icons-right">
-              Completed 2 modules </br>
-              Code restructuring
+              {{dailyreport}}
             </div>
           </div>
         </div>
@@ -125,7 +80,7 @@
         <div class="card-content">
           <div class="content">
             <div class="control has-icons-left has-icons-right">
-              HTML Tagging </br>
+              {{upcoming}}
             </div>
           </div>
         </div>
@@ -146,6 +101,13 @@ export default {
       dailyreport: appState.dashboard.dailyreport,
       upcoming: appState.dashboard.upcoming
     }
+  },
+  computed: {
+    activitylist: function() {
+      return this.activity
+        .map(p => '<tr> <td width = "5%" > <i class = "fa fa-bell-o"> </i></td ><td >'+ p +' </td></tr>')
+        .join(' ')
+        }
+    }
   }
-}
 </script>

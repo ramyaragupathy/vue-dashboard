@@ -1,14 +1,15 @@
 export default {
-  current: {},
-  dashboard: {
-    stats: {
-      projects: 10,
-      leaves: 4,
-      since: 40
-    },
-    activity: [],
-    dailyreport: "nothing to show",
-    upcoming:"Launch nuclear missles"
+    current: {},
+    dashboard: {
+      stats: {
+        projects: 10,
+        leaves: 4,
+        since: 40
+      },
+      activity: ["deleted Json Parser", "bshankar launches new crypto scam",
+    "rammukul created new Repository"],
+      dailyreport: "nothing to show",
+      upcoming:"Launch nuclear missles",
   },
   dreport: {
     reports: [
