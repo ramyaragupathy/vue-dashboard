@@ -8,7 +8,7 @@ export default {
       },
       activity: ["deleted Json Parser", "bshankar launches new crypto scam",
     "rammukul created new Repository"],
-      dailyreport: "nothing to show",
+      dailyreport: {date: "24/2/18", time : "8:51 AM", content:"- worked on code editor for the app\n- fi when solved any problem \n- app flow now works properly \n-  evaluating code type still remains https://github.com/sumitkumar15/kyurious "},
       upcoming:"Launch nuclear missles",
   },
   dreport: {
