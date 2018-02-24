@@ -9,11 +9,7 @@ export default {
       activity: ["deleted Json Parser", "bshankar launches new crypto scam",
     "rammukul created new Repository"],
       dailyreport: "nothing to show",
-      upcoming:"Launch nuclear missles"
-    },
-    activity: [],
-    dailyreport: "nothing to show",
-    upcoming:"Launch nuclear missles"
+      upcoming:"Launch nuclear missles",
   },
   dreport: {
     reports: [

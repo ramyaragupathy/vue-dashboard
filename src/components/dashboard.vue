@@ -66,8 +66,7 @@
         <div class="card-content">
           <div class="content">
             <div class="control has-icons-left has-icons-right">
-              Completed 2 modules </br>
-              Code restructuring
+              {{dailyreport}}
             </div>
           </div>
         </div>
@@ -81,7 +80,7 @@
         <div class="card-content">
           <div class="content">
             <div class="control has-icons-left has-icons-right">
-              HTML Tagging </br>
+              {{upcoming}}
             </div>
           </div>
         </div>
