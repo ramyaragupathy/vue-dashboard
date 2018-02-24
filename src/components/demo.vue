@@ -13,48 +13,16 @@
           <div class='card-table'>
             <div class='content'>
               <table class='table is-fullwidth is-striped'>
-                <tbody>
+                <tbody v-for='demo in pastDemos'>
                   <tr>
                     <td width='5%'><i class='fa fa-bell-o' /></td>
-                    <td>Created an issue in JSON parser</td>
+                    <td><big v-text='demo.title'></big>
+                    </td>
                   </tr>
-                  <tr>
-                    <td width='5%'><i class='fa fa-bell-o' /></td>
-                    <td>Commited into lisp-interpreter</td>
-                  </tr>
-                  <tr>
-                    <td width='5%'><i class='fa fa-bell-o' /></td>
-                    <td>Created a JSON parser</td>
-                  </tr>
-                  <tr>
-                    <td width='5%'><i class='fa fa-bell-o' /></td>
-                    <td>Created a JSON parser</td>
-                  </tr>
-                  <tr>
-                    <td width='5%'><i class='fa fa-bell-o' /></td>
-                    <td>Created a JSON parser</td>
-                  </tr>
-                  <tr>
-                    <td width='5%'><i class='fa fa-bell-o' /></td>
-                    <td>Created a JSON parser</td>
-                  </tr>
-                  <tr>
-                   <td width='5%'><i class='fa fa-bell-o' /></td>
-                   <td>Created a JSON parser</td>
-                 </tr>
-                 <tr>
-                   <td width='5%'><i class='fa fa-bell-o' /></td>
-                   <td>Created a JSON parser</td>
-                 </tr>
-                 <tr>
-                   <td width='5%'><i class='fa fa-bell-o' /></td>
-                   <td>Created a JSON parser</td>
-                 </tr>
                </tbody>
              </table>
            </div>
          </div>
-
        </div>
      </div>
      <div class='column is-7 is-pulled-right'>
@@ -83,12 +51,14 @@
 <script>
 import addDemo from './addDemo'
 import Vue from 'vue'
+import appState from '../appData.js'
 
 Vue.component('add-demo', addDemo)
 export default {
   name: 'Report',
   data () {
     return {
+      pastDemos: appState.demo.past
     }
   }
 }
