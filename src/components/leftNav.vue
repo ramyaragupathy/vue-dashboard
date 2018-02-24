@@ -15,7 +15,6 @@
     Progress
   </p>
   <ul class="menu-list">
-    <li><a>Projects</a></li>
     <li>
       <router-link v-bind:to="'/report'">Daily Report</router-link>
     </li>
