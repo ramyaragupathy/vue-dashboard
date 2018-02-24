@@ -51,9 +51,6 @@
             </table>
           </div>
         </div>
-        <footer class="card-footer">
-          <a href="#" class="card-footer-item">View All</a>
-        </footer>
       </div>
     </div>
     <div class="column is-6">
@@ -66,7 +63,11 @@
         <div class="card-content">
           <div class="content">
             <div class="control has-icons-left has-icons-right">
-              {{dailyreport}}
+              <div class='content'>
+                <div class='control has-icons-left has-icons-right'>
+                  <p v-html='dailyreport.content'></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -92,6 +93,8 @@
 
 <script>
 import appState from '../appData.js'
+import marked from 'marked'
+import _ from 'lodash'
 export default {
   name: 'Dashboard',
   data() {
@@ -99,7 +102,7 @@ export default {
       stats: appState.dashboard.stats,
       activity: appState.dashboard.activity,
       dailyreport: appState.dashboard.dailyreport,
-      upcoming: appState.dashboard.upcoming
+      upcoming: appState.demo.curr.title
     }
   },
   computed: {
@@ -107,7 +110,15 @@ export default {
       return this.activity
         .map(p => '<tr> <td width = "5%" > <i class = "fa fa-bell-o"> </i></td ><td >'+ p +' </td></tr>')
         .join(' ')
-        }
+    },
+    compiledMarkdown: function () {
+      return marked(this.dailyreport.content, { sanitize: true })
     }
+  },
+  created: function () {
+    console.log(this.dailyreport.content)
+    this.dailyreport.content = marked(this.dailyreport.content, { sanitize: true })
+    console.log(this.dailyreport.content)
   }
+}
 </script>
